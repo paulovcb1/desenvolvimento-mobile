@@ -19,7 +19,7 @@ import { SmallInput } from '../components/SmallInput';
 import { TextArea } from '../components/TextArea';
 import { ButtonIcon } from '../components/ButtonIcon';
 import { COLORS, FONTS } from '../theme';
-import { CATEGORIES } from '../data/categories';
+import { CATEGORIES, CATEGORIES_SCROLLABLE } from '../data/categories';
 import { getGameById } from '../data/games';
 
 const SELECTED_GUILD = { name: 'Valorosos', gameId: 'valorant' };
@@ -56,7 +56,7 @@ export function AppointmentCreate({ navigation }) {
         >
         <Text style={styles.sectionLabel}>Categoria</Text>
         <CategorySelect
-          categories={CATEGORIES}
+          categories={CATEGORIES_SCROLLABLE}
           selectedCategoryId={categorySelected}
           onSelectCategory={setCategorySelected}
         />

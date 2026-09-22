@@ -8,7 +8,7 @@ import { ListHeader } from '../components/ListHeader';
 import { ListDivider } from '../components/ListDivider';
 import { Appointment } from '../components/Appointment';
 import { COLORS, FONTS } from '../theme';
-import { CATEGORIES } from '../data/categories';
+import { CATEGORIES_SCROLLABLE } from '../data/categories';
 import { APPOINTMENTS } from '../data/appointments';
 import { CURRENT_USER } from '../data/user';
 
@@ -38,7 +38,7 @@ export function Home({ navigation }) {
       </View>
 
       <View style={styles.categories}>
-        <CategorySelect categories={CATEGORIES} />
+        <CategorySelect categories={CATEGORIES_SCROLLABLE} />
       </View>
 
       <ListHeader title="Partidas agendadas" count={APPOINTMENTS.length} />

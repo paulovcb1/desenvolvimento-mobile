@@ -18,3 +18,8 @@ export const CATEGORIES = [
     image: require('../../assets/diversao-icon.png'),
   },
 ];
+
+export const CATEGORIES_SCROLLABLE = [
+  ...CATEGORIES,
+  { ...CATEGORIES.find((category) => category.id === 'ranqueada'), id: 'ranqueada-2' },
+];
